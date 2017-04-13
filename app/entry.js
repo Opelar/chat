@@ -26,10 +26,12 @@ import index from './index.vue';
 let main = new Vue({
     el: '#main',
     // router: router,
-    mounted: () => {
+    mounted() {
         console.log('app init ready ...');
     },
-    render: h => h(index)
+    render(h) {
+        return h(index);
+    }
 });
 
 export default console.log('hello world.');
