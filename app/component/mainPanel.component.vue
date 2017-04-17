@@ -2,7 +2,7 @@
     <div class="mainPanel">
         <div class="left">
             <div class="avatar">
-                <img src="http://blog.geeek.info/static/favicon.jpg" alt="avatar" class="avatar avatar-default">
+                <img src="http://blog.geeek.info/static/favicon.jpg" alt="avatar" class="avatar avatar-circle">
                 <div class="name">
                     admin
                 </div>
@@ -11,17 +11,23 @@
             <ul class="tab">
                 <li class="tab-item">
                     <a href="#recent">
-                        <span class="glyphicon glyphicon-comment"></span>
+                        <div class="glyphicon glyphicon-comment"></div>
+                        <br>
+                        <span>消  息</span>
                     </a>
                 </li>
                 <li class="tab-item">
                     <a href="#concat">
-                        <span class="glyphicon glyphicon-user"></span>
+                        <div class="glyphicon glyphicon-user"></div>
+                        <br>
+                        <span>联系人</span>
                     </a>
                 </li>
                 <li class="tab-item">
                     <a href="#setting">
-                        <span class="glyphicon glyphicon-cog"></span>
+                        <div class="glyphicon glyphicon-cog"></div>
+                        <br>
+                        <span>设  置</span>
                     </a>
                 </li>
             </ul>
@@ -74,7 +80,14 @@
 
                 .tab-item {
                     text-align: center;
-                    margin-top: 150px;
+                    margin-top: 100px;
+
+                    div {
+                        font-size: 20px;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
                 }
             }
         }
