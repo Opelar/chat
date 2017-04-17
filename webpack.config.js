@@ -16,7 +16,7 @@ module.exports = {
     },
     devtool: 'source-map',
     resolve: {
-        extensions: ['js', 'json', 'vue', 'less', 'css'],
+        // extensions: ['js', 'json', 'vue', 'less', 'css'],
         alias: {
             'vue$': 'vue/dist/vue.esm.js'
         }

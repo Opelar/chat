@@ -1,12 +1,12 @@
 <template>
-    <div class="footer">
-        footer
+    <div class="mainPanel">
+        mainPanel
     </div>
 </template>
 
 <script>
     export default {
-        name: 'footer',
+        name: 'mainPanel',
         data() {
             return {}
         }
@@ -14,7 +14,7 @@
 </script>
 
 <style lang="less">
-    .footer {
-        color: red;
+    .mainPanel {
+        color: blue;
     }
 </style>

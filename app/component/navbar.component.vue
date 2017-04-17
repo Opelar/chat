@@ -1,12 +1,12 @@
 <template>
-    <div class="main">
-        main
+    <div class="navbar">
+        navbar
     </div>
 </template>
 
 <script>
     export default {
-        name: 'main',
+        name: 'navbar',
         data() {
             return {}
         }
@@ -14,7 +14,7 @@
 </script>
 
 <style lang="less">
-    .main {
-        color: blue;
+    .navbar {
+        color: green;
     }
 </style>

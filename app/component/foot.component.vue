@@ -1,12 +1,12 @@
 <template>
-    <div class="header">
-        header
+    <div class="foot">
+        foot
     </div>
 </template>
 
 <script>
     export default {
-        name: 'header',
+        name: 'foot',
         data() {
             return {}
         }
@@ -14,7 +14,7 @@
 </script>
 
 <style lang="less">
-    .header {
-        color: green;
+    .foot {
+        color: red;
     }
 </style>
