@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="header">
         header
     </div>
 </template>
@@ -13,5 +13,8 @@
     }
 </script>
 
-<style lang="css">
+<style lang="less">
+    .header {
+        color: green;
+    }
 </style>

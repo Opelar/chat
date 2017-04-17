@@ -1,17 +1,20 @@
 <template>
-    <div class="">
+    <div class="main">
         main
     </div>
 </template>
 
 <script>
     export default {
-        name: 'header',
+        name: 'main',
         data() {
             return {}
         }
     }
 </script>
 
-<style lang="css">
+<style lang="less">
+    .main {
+        color: blue;
+    }
 </style>

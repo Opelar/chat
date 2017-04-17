@@ -1,17 +1,20 @@
 <template>
-    <div class="">
+    <div class="footer">
         footer
     </div>
 </template>
 
 <script>
     export default {
-        name: 'header',
+        name: 'footer',
         data() {
             return {}
         }
     }
 </script>
 
-<style lang="css">
+<style lang="less">
+    .footer {
+        color: red;
+    }
 </style>

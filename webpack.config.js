@@ -16,16 +16,25 @@ module.exports = {
     },
     devtool: 'source-map',
     resolve: {
-        extensions: ['js', 'json', 'vue', 'less', 'css']
+        extensions: ['js', 'json', 'vue', 'less', 'css'],
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
     },
     module: {
         rules: [
             {
                 test: /\.vue$/,
-                loader: 'vue-loader'
+                loader: 'vue-loader',
+                options: {
+                    loaders: {
+
+                    }
+                }
             }, {
                 test: /\.js$/,
                 loader: 'babel-loader',
+                exclude: /node_modules/,
                 options: {
                     presets: ['es2015']
                 }
