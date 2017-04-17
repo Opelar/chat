@@ -11,6 +11,8 @@
     import mainPanel from './component/mainPanel.component.vue';
     import foot from './component/foot.component.vue';
 
+    import './css/main.less';
+
     export default {
         name: 'index',
         data() {

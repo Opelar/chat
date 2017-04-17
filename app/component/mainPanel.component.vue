@@ -15,6 +15,8 @@
 
 <style lang="less">
     .mainPanel {
+        background-color: pink;
         color: blue;
+        min-height: 650px;
     }
 </style>

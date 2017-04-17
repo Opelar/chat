@@ -1,6 +1,7 @@
 <template>
     <div class="foot">
-        foot
+        <hr/>
+        Copyright (c) 2017 Copyright Holder All Rights Reserved.
     </div>
 </template>
 
@@ -15,6 +16,8 @@
 
 <style lang="less">
     .foot {
+        background-color: pink;
         color: red;
+        text-align: center;
     }
 </style>
