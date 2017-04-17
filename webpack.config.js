@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 let htmlResolve = new HtmlWebpackPlugin({
     title: 'chat',
     filename: 'index.html',
-    template: './app/index.template.ejs'
+    template: './app/index.template.ejs',
+    favicon: './app/images/logo.svg'
 });
 
 module.exports = {
@@ -44,6 +45,12 @@ module.exports = {
             }, {
                 test: /\.less$/,
                 use: ['style-loader', 'css-loader', 'less-loader']
+            }, {
+                test: /\.(png|jpg|gif|svg|ttf|eot|woff|woff2)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]?[hash]'
+                }
             }
         ]
     },

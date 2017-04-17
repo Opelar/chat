@@ -1,11 +1,9 @@
 <template>
     <div class="navbar">
-        <ul>
-            <li>item - a</li>
-            <li>item - b</li>
-            <li>item - c</li>
-            <li>item - d</li>
-        </ul>
+        <div class="logo">
+            <img src="../images/logo.svg" alt="logo" />
+            <span>Chat</span>
+        </div>
     </div>
 </template>
 
@@ -20,17 +18,21 @@
 
 <style lang="less">
     .navbar {
-        background-color: pink;
-        color: green;
+        width: 100%;
+        margin-bottom: 10px;
 
-        ul {
-            height: 40px;
-            line-height: 40px;
-            list-style-type: none;
-
-            li {
+        .logo {
+            padding-left: 40px;
+            img {
+                width: 40px;
+                height: 40px;
                 float: left;
-                margin: 0 10px;
+            }
+
+            span {
+                color: #fff;
+                font-size: 24px;
+                line-height: 40px
             }
         }
     }
