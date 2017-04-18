@@ -1,14 +1,22 @@
+const path = require('path');
 const http = require('http');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const IO = require('socket.io');
+const socket = require('socket.io');
 
 const debug = require('debug');
 
 let log = debug('chat: ' + __filename.replace(__dirname, ''));
 
 let app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false}));
+
+app.use(cookieParser());
+
+app.use(express.static(path.join(__dirname, '_build/')));
 
 app.use((req, res, next) => {
     if (req.path === '/favicon.ico') {
@@ -46,13 +54,16 @@ let conf = {
     port: 8081
 };
 
-let server = module.exports = http.createServer(app);
-let io = IO(server);
+// let server = http.createServer(app);
+// server.listen(conf, () => {
+//     log('Server start @: %j', server.address());
+// });
 
-io.on('connection', (a) => {
-    log('socket on connection, %j', a);
+let server = app.listen(conf, () => {
+    log('Server start @: %j', server.address());
 });
 
-server.listen(conf, () => {
-    log('Server start @: %j', server.address());
+let io = module.exports = new socket(server);
+io.on('connection', (socket) => {
+    log('socket on connection ...');
 });

@@ -19,7 +19,8 @@ module.exports = {
     resolve: {
         // extensions: ['js', 'json', 'vue', 'less', 'css'],
         alias: {
-            'vue$': 'vue/dist/vue.esm.js'
+            'vue$': 'vue/dist/vue.esm.js',
+            'socket.io-client': 'socket.io-client/dist/socket.io.js'
         }
     },
     module: {
