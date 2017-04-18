@@ -2,7 +2,7 @@
     <div class="mainPanel">
         <div class="left">
             <div class="avatar">
-                <img src="http://blog.geeek.info/static/favicon.jpg" alt="avatar" class="avatar avatar-circle">
+                <img src="http://blog.geeek.info/static/favicon.jpg" alt="avatar" class="avatar avatar-default">
                 <div class="name">
                     admin
                 </div>
@@ -34,7 +34,46 @@
         </div>
 
         <div class="right">
+            <div class="concats-box">
+                <div class="recent-title">
+                    最近聊天
+                </div>
 
+                <div class="message-box">
+                    <ul>
+                        <li>
+                            <div class="concat-item">
+                                <img src="http://blog.geeek.info/static/favicon.jpg" alt="avatar" class="avatar avatar-circle">
+                                <span>admin</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concat-item">
+                                <img src="http://blog.geeek.info/static/favicon.jpg" alt="avatar" class="avatar avatar-circle">
+                                <span>admin</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concat-item">
+                                <img src="http://blog.geeek.info/static/favicon.jpg" alt="avatar" class="avatar avatar-circle">
+                                <span>admin</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concat-item">
+                                <img src="http://blog.geeek.info/static/favicon.jpg" alt="avatar" class="avatar avatar-circle">
+                                <span>admin</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concat-item">
+                                <img src="http://blog.geeek.info/static/favicon.jpg" alt="avatar" class="avatar avatar-circle">
+                                <span>admin</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -66,6 +105,7 @@
             width: 70px;
             min-height: 680px;
             background-color: #000;
+            float: left;
             .avatar {
                 margin: 10px auto;
 
@@ -88,12 +128,45 @@
                     span {
                         font-size: 12px;
                     }
+
+                    a {
+                        text-decoration: none;
+                        color: #bebebe;
+                    }
+
+                    a:active {
+                        color: #fff;
+                    }
                 }
             }
         }
 
         .right {
+            .concats-box {
+                width: 300px;
+                min-height: 680px;
+                .recent-title {
+                    height: 60px;
+                    text-align: center;
+                    line-height: 60px;
+                    background: #ccffff;
+                    border-bottom: 1px #bebebe;
+                    color: #fff;
+                }
 
+                .message-box {
+                    background: #bbbbbb;
+
+                    ul {
+                        list-style-type: none;
+                        padding: 0 0;
+
+                        li {
+
+                        }
+                    }
+                }
+            }
         }
     }
 </style>
